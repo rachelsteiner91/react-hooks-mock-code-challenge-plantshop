@@ -1,22 +1,22 @@
 import React, {useState} from "react";
-
-// 3. I can mark a plant as "sold out".
+//#3 DELIVERABLE
 function PlantCard({plant}) {
-  const [isClicked, setIsClicked] = useState(true)
+ const [isSoldOut, setIsSoldOut] = useState(true)
 
-  function handleClick() {
-    setIsClicked(!isClicked)
-  }
+ function handleClick(e) {
+  setIsSoldOut(!isSoldOut)
 
+  
+ }
   return (
     <li className="card">
       <img src={plant.image} alt={plant.name} />
       <h4>{plant.name}</h4>
       <p>Price: {plant.price}</p>
-      {isClicked? (
-        <button onClick={handleClick}className="primary">In Stock</button>
+      {isSoldOut? (
+        <button className="primary" onClick={(e) => handleClick(e)}>In Stock</button>
       ) : (
-        <button onClick={handleClick}>Out of Stock</button>
+        <button onClick={(e) => handleClick(e)}>Out of Stock</button>
       )}
     </li>
   );
@@ -24,7 +24,6 @@ function PlantCard({plant}) {
 
 export default PlantCard;
 
-// "id": 1,
-// "name": "Aloe",
-// "image": "./images/aloe.jpg",
-// "price": 15.99
+//pass props to children
+//map through to apply to EACH plant
+//pass to children
