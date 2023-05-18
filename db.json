@@ -42,17 +42,24 @@
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
     },
+
     {
-      "name": "",
-      "image": "",
-      "price": "15",
-      "id": 8
+      "name": "John Henry",
+      "image": "https://images.app.goo.gl/m4Xd7i6ctoxfb3dC6",
+      "price": "1500",
+      "id": 10
     },
     {
-      "name": "",
-      "image": "",
-      "price": "15",
-      "id": 9
+      "name": "John Henry",
+      "image": "https://images.app.goo.gl/m4Xd7i6ctoxfb3dC6",
+      "price": "1984",
+      "id": 11
+    },
+    {
+      "name": "John Henry",
+      "image": "./images/jade.jpg",
+      "price": "1984",
+      "id": 12
     }
   ]
 }

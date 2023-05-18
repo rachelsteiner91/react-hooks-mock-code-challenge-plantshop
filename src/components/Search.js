@@ -1,8 +1,7 @@
 import React from "react";
 
-function Search({search, setSearch}) {
-
-  function handleChange(e){
+function Search({setSearch, search}) {
+  function handleChange(e) {
     setSearch(e.target.value)
   }
   return (

@@ -5,14 +5,39 @@ function PlantList({plants}) {
   return (
     <ul className="cards">
       {
-        plants.map((plant) => {
-          return  <PlantCard key={plant.id} plant={plant} />
+        plants.map((plant)  => {
+          return <PlantCard key={plant.id} plant={plant} />
         })
-
-    }</ul>
+       }
+    </ul>
   );
 }
 
 export default PlantList;
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import PlantCard from "./PlantCard";
+
+// function PlantList({plants}) {
+//   return (
+//     <ul className="cards">
+//       {
+//         plants.map((plant) => {
+//           return  <PlantCard key={plant.id} plant={plant} />
+//         })
+
+//     }</ul>
+//   );
+// }
+
+// export default PlantList;
 
 //map through to apply to EACH plant
